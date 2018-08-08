@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "sdkVersion": "27.0.0",
+    "version": "1.0.0",
+    "name": "Get Charged",
+    "slug": "GetCharged",
+    "icon": "./images/logo.png",
+    "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "image": "./images/evcharging.png",
+      "resizeMode": "cover"
+    },
+    "android": {
+      "package": "com.GetCharged.GetCharged",
+      "permissions": []
+    },
+    "ios": {
+      "bundleIdentifier": "com.GetCharged2.GetCharged2"
+    },
+    "packagerOpts": {
+      "nonPersistent": "--nonPersistent"
+    }
+  }
+}
