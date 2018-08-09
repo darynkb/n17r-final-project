@@ -76,7 +76,7 @@ class MapScreen extends React.Component {
   }
 
   onMarkerPress=(i)=>{
-    console.log(this.state.data[i])
+    console.log('is it probleem'+this.state.data[i])
     this.setState({
       selected:this.state.data[i],
       index:i,

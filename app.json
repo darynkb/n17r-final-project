@@ -9,7 +9,7 @@
     "splash": {
       "backgroundColor": "#ffffff",
       "image": "./images/evcharging.png",
-      "resizeMode": "cover"
+      "resizeMode": "contain"
     },
     "android": {
       "package": "com.GetCharged.GetCharged",
