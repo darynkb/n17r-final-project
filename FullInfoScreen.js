@@ -14,7 +14,7 @@ import firebase from 'firebase';
 
 export default class FullInfoScreen extends React.Component {
     static navigationOptions = {
-        title: ' О зарядном устройстве',
+        title: '     О зарядном устройстве',
         headerStyle: {
           backgroundColor: '#009DDC',
         },
