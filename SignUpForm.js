@@ -46,7 +46,7 @@ class SignUpForm extends Component {
     }
     render() {
         return (
-                <View >
+                <View style={{backgroundColor: "#ffffff"}}>
                     <Image
                         style={{ width: 190, height: 190, alignSelf: 'center', marginTop: 50,}}
                         source={{ uri: 'https://pp.userapi.com/c845416/v845416833/b4c02/OsOxEzsMvmM.jpg' }}
