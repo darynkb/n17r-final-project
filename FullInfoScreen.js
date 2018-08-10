@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Alert,
   Text,
   View,
   StyleSheet,
@@ -8,18 +7,14 @@ import {
   TouchableOpacity,
   ScrollView,
   FlatList,
-  Linking,
-  TextInput,
-  Button
 } from 'react-native';
-import {Divider} from 'react-native-elements';
-import { Rating } from 'react-native-ratings';
+
 import { Card, CardTitle, CardContent, CardImage } from 'react-native-material-cards'
 import firebase from 'firebase';
 
 export default class FullInfoScreen extends React.Component {
     static navigationOptions = {
-        title: '        О зарядном устройстве',
+        title: ' О зарядном устройстве',
         headerStyle: {
           backgroundColor: '#009DDC',
         },

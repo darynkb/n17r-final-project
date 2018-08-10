@@ -13,7 +13,12 @@
     },
     "android": {
       "package": "com.GetCharged.GetCharged",
-      "permissions": []
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+	  "config":{
+  "googleMaps": {
+        "apiKey": "AIzaSyCYmO4oHDQJatUFudkF150BhgPU4vI6Pxo"
+      }
+  }
     },
     "ios": {
       "bundleIdentifier": "com.GetCharged2.GetCharged2"

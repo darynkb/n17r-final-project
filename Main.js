@@ -13,7 +13,7 @@ import {
 import { Ionicons } from '@expo/vector-icons'; // Version can be specified in package.json
 import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation'; // Version can be specified in package.json
 import { Card, CardTitle, CardAction, CardButton, CardImage } from 'react-native-material-cards'
-import { MapView} from 'expo';
+import { MapView, Permissions, Location} from 'expo';
 import firebase from 'firebase';
 
 import DetailsScreen from './Details';
@@ -84,7 +84,19 @@ class MapScreen extends React.Component {
     })
   }
 
+  getLocationAsync = async() => {
+    const {status} = await Permissions.askAsync(Permissions.LOCATION);
+    if(status === 'granted'){
+      return Location.getCurrentPositionAsync({enableHighAccuracy: true})
+    } else{
+      alert("Permission denied");
+    }
+  }
+
   componentWillMount() {
+
+    this.getLocationAsync();
+
     this.setState({inProcess: true});
   if(firebase.apps.length === 0) {
     var config = {

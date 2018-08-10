@@ -30,7 +30,7 @@ const objectToArr = data => {
 
 export default class DetailsScreen extends React.Component {
     static navigationOptions = {
-      title: '        О зарядной точке',
+      title: ' О зарядной точке',
       headerStyle: {
         backgroundColor: '#009DDC',
       },
