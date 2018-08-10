@@ -84,9 +84,18 @@ class MapScreen extends React.Component {
     })
   }
 
-  
+  getLocationAsync = async() => {
+    const {status} = await Permissions.askAsync(Permissions.LOCATION);
+    if(status === 'granted'){
+      return Location.getCurrentPositionAsync({enableHighAccuracy: true})
+    } else{
+      alert("Permission denied");
+    }
+  }
 
   componentWillMount() {
+
+    this.getLocationAsync();
 
     this.setState({inProcess: true});
   if(firebase.apps.length === 0) {
